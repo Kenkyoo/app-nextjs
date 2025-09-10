@@ -4,6 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { PostHogProvider } from '@/components/analytics/PostHogProvider';
 import { DemoBadge } from '@/components/DemoBadge';
+import { Provider } from '@/components/ui/provider';
 import { routing } from '@/libs/I18nRouting';
 import '@/styles/global.css';
 
@@ -49,11 +50,11 @@ export default async function RootLayout(props: {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider>
           <PostHogProvider>
-            {props.children}
+            <Provider>{props.children}</Provider>
           </PostHogProvider>
           <DemoBadge />
         </NextIntlClientProvider>
