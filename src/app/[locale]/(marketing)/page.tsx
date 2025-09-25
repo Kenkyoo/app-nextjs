@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import { Sponsors } from '@/components/Sponsors';
 import { features } from '@/types/features';
 
@@ -72,7 +73,7 @@ export default async function Index(props: IIndexProps) {
                 </dl>
               </div>
             </div>
-            <img
+            <Image
               alt="Product screenshot"
               src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
               width={2432}
@@ -82,13 +83,22 @@ export default async function Index(props: IIndexProps) {
           </div>
         </div>
       </div>
-      <p className="text-base">
-        Our sponsors&apos; exceptional support has made this project possible.
-        Their services integrate seamlessly with the boilerplate, and we
-        recommend trying them out.
-      </p>
-      <h2 className="mt-5 text-2xl font-bold">{t('sponsors_title')}</h2>
-      <Sponsors />
+      <div className="bg-gray-900 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-base/7 font-semibold text-indigo-400">sponsors</h2>
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+              {t('sponsors_title')}
+            </p>
+            <p className="mt-6 text-lg/8 text-gray-300">
+              Our sponsors&apos; exceptional support has made this project possible.
+              Their services integrate seamlessly with the boilerplate, and we
+              recommend trying them out.
+            </p>
+          </div>
+          <Sponsors />
+        </div>
+      </div>
     </>
   );
 };
