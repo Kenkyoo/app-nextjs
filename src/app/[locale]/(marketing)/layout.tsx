@@ -20,48 +20,38 @@ export default async function Layout(props: {
       <DemoBanner />
       <BaseTemplate
         leftNav={(
-          <ul className="list-none">
-            <li>
-              <Link
-                href="/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('home_link')}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('about_link')}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/counter/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('counter_link')}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/portfolio/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('portfolio_link')}
-              </Link>
-            </li>
-            <li>
-              <a
-                className="text-sm/6 font-semibold text-white"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
+          <>
+            <Link
+              href="/"
+              className="text-sm/6 font-semibold text-white"
+            >
+              {t('home_link')}
+            </Link>
+            <Link
+              href="/about/"
+              className="text-sm/6 font-semibold text-white"
+            >
+              {t('about_link')}
+            </Link>
+            <Link
+              href="/counter/"
+              className="text-sm/6 font-semibold text-white"
+            >
+              {t('counter_link')}
+            </Link>
+            <Link
+              href="/portfolio/"
+              className="text-sm/6 font-semibold text-white"
+            >
+              {t('portfolio_link')}
+            </Link>
+            <a
+              className="text-sm/6 font-semibold text-white"
+              href="https://github.com/ixartz/Next-js-Boilerplate"
+            >
+              GitHub
+            </a>
+          </>
         )}
         rightNav={(
           <div className="flex gap-3 py-6">
@@ -125,7 +115,7 @@ export default async function Layout(props: {
           </>
         )}
         rightNavMobile={(
-          <ul>
+          <>
             <li>
               <Link
                 href="/sign-in/"
@@ -147,7 +137,7 @@ export default async function Layout(props: {
             <li>
               <LocaleSwitcher />
             </li>
-          </ul>
+          </>
         )}
       >
         <div className="py-5 text-xl [&_p]:my-6">{props.children}</div>

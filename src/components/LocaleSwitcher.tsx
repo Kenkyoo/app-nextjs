@@ -19,9 +19,6 @@ export const LocaleSwitcher = () => {
 
   return (
     <div className="sm:col-span-3">
-      <label htmlFor="locale" className="block text-sm/6 font-medium text-white">
-        Country
-      </label>
       <div className="mt-2 grid grid-cols-1">
         <select
           defaultValue={locale}
