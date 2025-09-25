@@ -2,7 +2,7 @@ import { XMarkIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 
 export const DemoBanner = () => (
-  <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-800/50 px-6 py-2.5 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 sm:px-3.5 sm:before:flex-1">
+  <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-purple-800/50 px-6 py-2.5 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 sm:px-3.5 sm:before:flex-1">
     <div
       aria-hidden="true"
       className="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl"

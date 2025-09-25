@@ -1,6 +1,7 @@
 'use client';
 
 import type { ChangeEventHandler } from 'react';
+import { ChevronDownIcon } from '@heroicons/react/16/solid';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { usePathname } from '@/libs/I18nNavigation';
@@ -17,17 +18,31 @@ export const LocaleSwitcher = () => {
   };
 
   return (
-    <select
-      defaultValue={locale}
-      onChange={handleChange}
-      className="border border-gray-300 font-medium focus:outline-hidden focus-visible:ring-3"
-      aria-label="lang-switcher"
-    >
-      {routing.locales.map(elt => (
-        <option key={elt} value={elt}>
-          {elt.toUpperCase()}
-        </option>
-      ))}
-    </select>
+    <div className="sm:col-span-3">
+      <label htmlFor="locale" className="block text-sm/6 font-medium text-white">
+        Country
+      </label>
+      <div className="mt-2 grid grid-cols-1">
+        <select
+          defaultValue={locale}
+          onChange={handleChange}
+          aria-label="lang-switcher"
+          id="locale"
+          name="locale"
+          autoComplete="locale-name"
+          className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+        >
+          {routing.locales.map(elt => (
+            <option key={elt} value={elt}>
+              {elt.toUpperCase()}
+            </option>
+          ))}
+        </select>
+        <ChevronDownIcon
+          aria-hidden="true"
+          className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4"
+        />
+      </div>
+    </div>
   );
 };

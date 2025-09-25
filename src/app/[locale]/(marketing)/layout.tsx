@@ -20,7 +20,7 @@ export default async function Layout(props: {
       <DemoBanner />
       <BaseTemplate
         leftNav={(
-          <>
+          <ul className="list-none">
             <li>
               <Link
                 href="/"
@@ -61,32 +61,24 @@ export default async function Layout(props: {
                 GitHub
               </a>
             </li>
-          </>
+          </ul>
         )}
         rightNav={(
-          <>
-            <li>
-              <Link
-                href="/sign-in/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('sign_in_link')}
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/sign-up/"
-                className="text-sm/6 font-semibold text-white"
-              >
-                {t('sign_up_link')}
-              </Link>
-            </li>
-
-            <li>
-              <LocaleSwitcher />
-            </li>
-          </>
+          <div className="flex gap-3 py-6">
+            <Link
+              href="/sign-in/"
+              className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
+            >
+              {t('sign_in_link')}
+            </Link>
+            <Link
+              href="/sign-up/"
+              className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
+            >
+              {t('sign_up_link')}
+            </Link>
+            <LocaleSwitcher />
+          </div>
         )}
         leftNavMobile={(
           <>
@@ -133,7 +125,7 @@ export default async function Layout(props: {
           </>
         )}
         rightNavMobile={(
-          <>
+          <ul>
             <li>
               <Link
                 href="/sign-in/"
@@ -155,7 +147,7 @@ export default async function Layout(props: {
             <li>
               <LocaleSwitcher />
             </li>
-          </>
+          </ul>
         )}
       >
         <div className="py-5 text-xl [&_p]:my-6">{props.children}</div>
