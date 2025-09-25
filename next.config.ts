@@ -6,6 +6,9 @@ import './src/libs/Env';
 
 // Define the base Next.js configuration
 const baseConfig: NextConfig = {
+  images: {
+    remotePatterns: [new URL('https://tailwindcss.com/plus-assets/')],
+  },
   eslint: {
     dirs: ['.'],
   },

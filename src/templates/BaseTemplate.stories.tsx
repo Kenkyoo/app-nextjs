@@ -30,6 +30,12 @@ export const BaseWithReactComponent: Story = {
         <li>Link 2</li>
       </>
     ),
+    leftNavMobile: (
+      <>
+        <li>Link 1</li>
+        <li>Link 2</li>
+      </>
+    ),
   },
 };
 
