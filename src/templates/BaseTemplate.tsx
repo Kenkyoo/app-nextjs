@@ -57,25 +57,25 @@ export const BaseTemplate = (props: {
                         <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🚀</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Next.js with App Router support
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔥</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               TypeScript for type checking
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">💎</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Tailwind CSS integration
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔒</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Authentication with
                               {' '}
                               <a
@@ -92,13 +92,13 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">📦</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               ORM with DrizzleORM (PostgreSQL, SQLite, MySQL support)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">💽</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Dev database with PGlite and production with
                               {' '}
                               <a
@@ -113,7 +113,7 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🌐</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Multi-language support (i18n) with next-intl and
                               {' '}
                               <a
@@ -128,37 +128,37 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔴</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Form handling (React Hook Form) and validation (Zod)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">📏</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Linting and formatting (ESLint, Prettier)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🦊</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Git hooks and commit linting (Husky, Commitlint)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🦺</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Testing suite (Vitest, React Testing Library, Playwright)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🎉</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Storybook for UI development
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🐰</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               AI-powered code reviews with
                               {' '}
                               <a
@@ -173,7 +173,7 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🚨</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Error monitoring (
                               {' '}
                               <a
@@ -189,13 +189,13 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🖥️</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Monitoring as Code (Checkly)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔐</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Security and bot protection (
                               {' '}
                               <a
@@ -211,13 +211,13 @@ export const BaseTemplate = (props: {
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🤖</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               SEO optimization (metadata, JSON-LD, Open Graph tags)
                             </span>
                           </li>
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">⚙️</span>
-                            <span className="text-base leading-7 font-medium text-gray-900">
+                            <span className="text-base leading-7 font-medium text-white">
                               Development tools (VSCode config, bundler analyzer, changelog
                               generation)
                             </span>
@@ -397,7 +397,7 @@ export const BaseTemplate = (props: {
             >
             </path>
           </svg>
-          <p className="mt-5 text-center text-2xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+          <p className="mt-5 text-center text-2xl font-semibold tracking-tight text-pretty text-white sm:text-2xl">
             {t.rich('made_with', {
               author: () => (
                 <a
@@ -409,7 +409,7 @@ export const BaseTemplate = (props: {
               ),
             })}
           </p>
-          <div className="mt-8 flex items-center justify-center space-x-4 text-2xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+          <div className="mt-8 flex items-center justify-center space-x-4 text-2xl font-semibold tracking-tight text-pretty text-white sm:text-2xl">
             {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
           </div>
         </div>
