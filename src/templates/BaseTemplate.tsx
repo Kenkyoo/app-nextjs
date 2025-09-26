@@ -21,10 +21,10 @@ export const BaseTemplate = (props: {
   return (
     <>
       <div className="bg-gray-900">
-        <Dialog open={open} onClose={setOpen} className="relative z-10">
+        <Dialog open={open} onClose={setOpen} className="relative z-100">
           <DialogBackdrop
             transition
-            className="fixed inset-0 bg-gray-900/50 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
+            className="fixed inset-0 isolate bg-gray-900/50 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
           />
 
           <div className="fixed inset-0 overflow-hidden">
@@ -60,13 +60,13 @@ export const BaseTemplate = (props: {
         </Dialog>
         <header className="relative inset-x-0 top-0 z-50">
           <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-            <div className="flex lg:flex-1">
+            <div className="flex gap-4 lg:flex-1">
               <button
                 type="button"
                 onClick={() => setOpen(true)}
-                className="rounded-md bg-white/10 px-2.5 py-1.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
               >
-                Open drawer
+                <Bars3Icon aria-hidden="true" className="size-6" />
               </button>
               <Link href="/home" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -96,6 +96,7 @@ export const BaseTemplate = (props: {
               {props.rightNav}
             </div>
           </nav>
+          <div className="mx-auto mt-4 max-w-2xl border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none"></div>
           <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <div className="fixed inset-0 z-50" />
             <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
@@ -169,7 +170,7 @@ export const BaseTemplate = (props: {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link
                   href="/sign-in/"
-                  className="rounded-md bg-purple-800/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  className="rounded-md bg-indigo-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                   Get started
                 </Link>
@@ -197,9 +198,8 @@ export const BaseTemplate = (props: {
       </div>
 
       <main>{props.children}</main>
-
-      <footer className="mx-auto w-full bg-gray-900 px-4 sm:px-6 lg:px-8">
-        <div className="border-t border-slate-900/5 py-10">
+      <footer className="mx-auto w-full border-t border-gray-700 bg-gray-900 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center py-10">
           <svg
             className="mx-auto h-5 w-auto text-slate-900"
             aria-hidden="true"
@@ -224,7 +224,7 @@ export const BaseTemplate = (props: {
             >
             </path>
           </svg>
-          <p className="mt-5 text-center text-sm leading-6">
+          <p className="mt-5 text-center text-sm leading-6 text-white">
             {t.rich('made_with', {
               author: () => (
                 <a
@@ -236,7 +236,7 @@ export const BaseTemplate = (props: {
               ),
             })}
           </p>
-          <div className="mt-8 flex items-center justify-center space-x-4 text-sm leading-6 font-semibold">
+          <div className="mt-8 flex items-center justify-center space-x-4 text-sm leading-6 font-semibold text-white">
             {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
           </div>
         </div>

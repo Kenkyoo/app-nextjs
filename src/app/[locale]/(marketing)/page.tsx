@@ -40,7 +40,7 @@ export default async function Index(props: IIndexProps) {
                   {' '}
                   {`Follow `}
                   <a
-                    className="text-base hover:border-b-2 hover:border-blue-700"
+                    className="text-white hover:border-b-2 hover:border-blue-700"
                     href="https://twitter.com/ixartz"
                     target="_blank"
                     rel="noreferrer noopener"

@@ -62,7 +62,7 @@ export default async function Layout(props: {
             </Link>
             <Link
               href="/sign-up/"
-              className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              className="rounded-md bg-indigo-400 p-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
               {t('sign_up_link')}
             </Link>
