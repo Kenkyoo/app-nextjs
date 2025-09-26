@@ -17,14 +17,14 @@ export const BaseTemplate = (props: {
 }) => {
   const t = useTranslations('BaseTemplate');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="bg-gray-900">
         <Dialog open={open} onClose={setOpen} className="relative z-100">
           <DialogBackdrop
             transition
-            className="fixed inset-0 isolate transition-opacity duration-500 ease-in-out data-closed:opacity-0"
+            className="fixed inset-0 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
           />
 
           <div className="fixed inset-0 overflow-hidden">
@@ -51,28 +51,29 @@ export const BaseTemplate = (props: {
                     <div className="px-4 sm:px-6">
                       <DialogTitle className="text-base font-semibold text-white">Sidebar</DialogTitle>
                     </div>
+                    <h4 className="text-center">Build with:</h4>
                     <div className="relative mt-6 flex-1 px-4 sm:px-6">
                       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                         <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🚀</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Next.js with App Router support
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔥</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               TypeScript for type checking
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">💎</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Tailwind CSS integration
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔒</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Authentication with
@@ -89,13 +90,13 @@ export const BaseTemplate = (props: {
                               (includes passwordless, social, and multi-factor auth)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">📦</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               ORM with DrizzleORM (PostgreSQL, SQLite, MySQL support)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">💽</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Dev database with PGlite and production with
@@ -110,7 +111,7 @@ export const BaseTemplate = (props: {
                               </a>
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🌐</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Multi-language support (i18n) with next-intl and
@@ -125,37 +126,37 @@ export const BaseTemplate = (props: {
                               </a>
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔴</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Form handling (React Hook Form) and validation (Zod)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">📏</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Linting and formatting (ESLint, Prettier)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🦊</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Git hooks and commit linting (Husky, Commitlint)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🦺</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Testing suite (Vitest, React Testing Library, Playwright)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🎉</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Storybook for UI development
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🐰</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               AI-powered code reviews with
@@ -170,7 +171,7 @@ export const BaseTemplate = (props: {
                               </a>
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🚨</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Error monitoring (
@@ -186,13 +187,13 @@ export const BaseTemplate = (props: {
                               ) and logging (LogTape, an alternative to Pino.js)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🖥️</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Monitoring as Code (Checkly)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🔐</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Security and bot protection (
@@ -208,13 +209,13 @@ export const BaseTemplate = (props: {
                               )
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🤖</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               SEO optimization (metadata, JSON-LD, Open Graph tags)
                             </span>
                           </li>
-                          <li className="flex gap-x-3 text-gray-600">
+                          <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">⚙️</span>
                             <span className="text-base leading-7 font-medium text-gray-900">
                               Development tools (VSCode config, bundler analyzer, changelog
@@ -373,7 +374,7 @@ export const BaseTemplate = (props: {
       <footer className="mx-auto w-full border-t border-gray-700 bg-gray-900 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center py-10">
           <svg
-            className="mx-auto h-5 w-auto text-slate-900"
+            className="mx-auto h-8 w-auto text-slate-900"
             aria-hidden="true"
             viewBox="0 0 160 24"
             fill="none"
@@ -396,7 +397,7 @@ export const BaseTemplate = (props: {
             >
             </path>
           </svg>
-          <p className="mt-5 text-center text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+          <p className="mt-5 text-center text-2xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
             {t.rich('made_with', {
               author: () => (
                 <a
@@ -408,7 +409,7 @@ export const BaseTemplate = (props: {
               ),
             })}
           </p>
-          <div className="mt-8 flex items-center justify-center space-x-4 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+          <div className="mt-8 flex items-center justify-center space-x-4 text-2xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
             {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
           </div>
         </div>
