@@ -24,7 +24,7 @@ export const BaseTemplate = (props: {
         <Dialog open={open} onClose={setOpen} className="relative z-100">
           <DialogBackdrop
             transition
-            className="fixed inset-0 isolate bg-gray-900/50 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
+            className="fixed inset-0 isolate transition-opacity duration-500 ease-in-out data-closed:opacity-0"
           />
 
           <div className="fixed inset-0 overflow-hidden">
@@ -49,9 +49,181 @@ export const BaseTemplate = (props: {
                   </TransitionChild>
                   <div className="relative flex h-full flex-col overflow-y-auto bg-gray-800 py-6 shadow-xl after:absolute after:inset-y-0 after:left-0 after:w-px after:bg-white/10">
                     <div className="px-4 sm:px-6">
-                      <DialogTitle className="text-base font-semibold text-white">Panel title</DialogTitle>
+                      <DialogTitle className="text-base font-semibold text-white">Sidebar</DialogTitle>
                     </div>
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">{/* Your content */}</div>
+                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                        <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🚀</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Next.js with App Router support
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🔥</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              TypeScript for type checking
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">💎</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Tailwind CSS integration
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🔒</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Authentication with
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Clerk
+                              </a>
+                              {' '}
+                              (includes passwordless, social, and multi-factor auth)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">📦</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              ORM with DrizzleORM (PostgreSQL, SQLite, MySQL support)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">💽</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Dev database with PGlite and production with
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://www.prisma.io/?via=nextjsindex"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Prisma PostgreSQL
+                              </a>
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🌐</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Multi-language support (i18n) with next-intl and
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://l.crowdin.com/next-js"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Crowdin
+                              </a>
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🔴</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Form handling (React Hook Form) and validation (Zod)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">📏</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Linting and formatting (ESLint, Prettier)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🦊</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Git hooks and commit linting (Husky, Commitlint)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🦺</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Testing suite (Vitest, React Testing Library, Playwright)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🎉</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Storybook for UI development
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🐰</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              AI-powered code reviews with
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                CodeRabbit
+                              </a>
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🚨</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Error monitoring (
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Sentry
+                              </a>
+                              ) and logging (LogTape, an alternative to Pino.js)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🖥️</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Monitoring as Code (Checkly)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🔐</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Security and bot protection (
+                              {' '}
+                              <a
+                                className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+                                href="https://launch.arcjet.com/Q6eLbRE"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Arcjet
+                              </a>
+                              )
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">🤖</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              SEO optimization (metadata, JSON-LD, Open Graph tags)
+                            </span>
+                          </li>
+                          <li className="flex gap-x-3 text-gray-600">
+                            <span className="text-2xl">⚙️</span>
+                            <span className="text-base leading-7 font-medium text-gray-900">
+                              Development tools (VSCode config, bundler analyzer, changelog
+                              generation)
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </DialogPanel>
               </div>
@@ -224,7 +396,7 @@ export const BaseTemplate = (props: {
             >
             </path>
           </svg>
-          <p className="mt-5 text-center text-sm leading-6 text-white">
+          <p className="mt-5 text-center text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
             {t.rich('made_with', {
               author: () => (
                 <a
@@ -236,7 +408,7 @@ export const BaseTemplate = (props: {
               ),
             })}
           </p>
-          <div className="mt-8 flex items-center justify-center space-x-4 text-sm leading-6 font-semibold text-white">
+          <div className="mt-8 flex items-center justify-center space-x-4 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
             {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
           </div>
         </div>
