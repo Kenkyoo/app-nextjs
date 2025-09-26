@@ -51,10 +51,10 @@ export const BaseTemplate = (props: {
                     <div className="px-4 sm:px-6">
                       <DialogTitle className="text-base font-semibold text-white">Sidebar</DialogTitle>
                     </div>
-                    <h4 className="text-center">Build with:</h4>
                     <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                      <h4 className="text-center text-white mb-2">Build with:</h4>
                       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                        <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                        <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-1 lg:gap-y-16">
                           <li className="flex gap-x-3 text-white">
                             <span className="text-2xl">🚀</span>
                             <span className="text-base leading-7 font-medium text-white">

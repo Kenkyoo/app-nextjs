@@ -59,28 +59,30 @@ export default async function About(props: IAboutProps) {
             <p className="mt-6 text-lg/8 text-pretty text-gray-300">
               {t('about_paragraph')}
             </p>
-            <Link
-              href="/"
-              className="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              {' '}
-              Get started
-              {' '}
-            </Link>
-            <Link href="/counter" className="text-sm/6 font-semibold text-white hover:text-gray-100">
-              Learn more
-              <span aria-hidden="true">→</span>
-            </Link>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <Link
+                href="/"
+                className="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                {' '}
+                Get started
+                {' '}
+              </Link>
+              <Link href="/counter" className="text-sm/6 font-semibold text-white hover:text-gray-100">
+                Learn more
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="relative mt-16 h-80 lg:mt-8">
-          <Image
-            width={1824}
-            height={1080}
-            className="absolute top-0 left-0 w-228 max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-            src="/assets/images/crowdin-dark.png"
-            alt="Crowdin Translation Management System"
-          />
+          <div className="relative mt-16 h-80 lg:mt-8">
+            <Image
+              width={1824}
+              height={1080}
+              className="absolute top-0 left-0 w-228 max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              src="/assets/images/crowdin-dark.png"
+              alt="Crowdin Translation Management System"
+            />
+          </div>
         </div>
       </div>
     </div>
