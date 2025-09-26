@@ -14,7 +14,6 @@ export default async function Layout(props: {
     locale,
     namespace: 'RootLayout',
   });
-
   return (
     <>
       <DemoBanner />
@@ -63,7 +62,7 @@ export default async function Layout(props: {
             </Link>
             <Link
               href="/sign-up/"
-              className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
+              className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
               {t('sign_up_link')}
             </Link>
@@ -140,7 +139,7 @@ export default async function Layout(props: {
           </>
         )}
       >
-        <div className="py-5 text-xl [&_p]:my-6">{props.children}</div>
+        <div className="text-xl [&_p]:my-6">{props.children}</div>
       </BaseTemplate>
     </>
   );

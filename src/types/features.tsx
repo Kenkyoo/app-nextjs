@@ -9,7 +9,7 @@ export const features = [
         {' '}
         <a
           href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           Clerk
         </a>
@@ -26,7 +26,7 @@ export const features = [
         {' '}
         <a
           href="https://www.prisma.io/?via=nextjsindex"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           Prisma PostgreSQL
         </a>
@@ -40,7 +40,7 @@ export const features = [
         {' '}
         <a
           href="https://l.crowdin.com/next-js"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           Crowdin
         </a>
@@ -59,7 +59,7 @@ export const features = [
         {' '}
         <a
           href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           CodeRabbit
         </a>
@@ -72,7 +72,7 @@ export const features = [
         🚨 Error monitoring (
         <a
           href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           Sentry
         </a>
@@ -87,7 +87,7 @@ export const features = [
         🔐 Security and bot protection (
         <a
           href="https://launch.arcjet.com/Q6eLbRE"
-          className="font-bold text-blue-700 hover:border-b-2 hover:border-blue-700"
+          className="text-base font-bold hover:border-b-2 hover:border-blue-700"
         >
           Arcjet
         </a>
