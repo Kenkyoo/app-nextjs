@@ -43,11 +43,7 @@ export default function Counter() {
           <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
             {`${t('security_powered_by')} `}
           </h1>
-          <p className="mt-6 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-            Counter
-          </p>
-
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col items-center justify-center gap-x-6">
             <CounterForm />
             <CurrentCount />
           </div>

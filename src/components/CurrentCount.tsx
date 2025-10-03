@@ -19,7 +19,7 @@ export const CurrentCount = async () => {
   logger.info('Counter fetched successfully');
 
   return (
-    <div>
+    <div className="mt-10 text-white">
       {t('count', { count })}
     </div>
   );
