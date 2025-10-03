@@ -34,13 +34,12 @@ export const CounterForm = () => {
     <form onSubmit={handleIncrement}>
       <p>{t('presentation')}</p>
       <div>
-        <label className="text-sm font-bold text-gray-700" htmlFor="increment">
+        <label className="block text-sm/6 font-medium text-white" htmlFor="increment">
           {t('label_increment')}
           <input
             id="increment"
             type="number"
-            className="ml-2 w-32 appearance-none rounded-sm border border-gray-200 px-2 py-1 text-sm leading-tight text-gray-700 focus:ring-3 focus:ring-blue-300/50 focus:outline-hidden"
-            {...form.register('increment')}
+            className="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6"
           />
         </label>
 
@@ -53,7 +52,7 @@ export const CounterForm = () => {
 
       <div className="mt-2">
         <button
-          className="rounded-sm bg-blue-500 px-5 py-1 font-bold text-white hover:bg-blue-600 focus:ring-3 focus:ring-blue-300/50 focus:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+          className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
           type="submit"
           disabled={form.formState.isSubmitting}
         >

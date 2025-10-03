@@ -25,33 +25,32 @@ export default function Counter() {
 
   return (
     <>
-      <CounterForm />
+      <div className="grid min-h-full place-items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+        <div className="text-center">
+          <p className="text-base font-semibold text-indigo-400">404</p>
+          <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+            {`${t('security_powered_by')} `}
+          </h1>
+          <p className="mt-6 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+            <a
+              href="https://launch.arcjet.com/Q6eLbRE"
+            >
+              <Image
+                className="mx-auto mt-2"
+                src="/assets/images/arcjet-light.svg"
+                alt="Arcjet"
+                width={128}
+                height={38}
+              />
+            </a>
+          </p>
 
-      <div className="mt-3">
-        <CurrentCount />
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <CounterForm />
+            <CurrentCount />
+          </div>
+        </div>
       </div>
-
-      <div className="mt-5 text-center text-sm">
-        {`${t('security_powered_by')} `}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://launch.arcjet.com/Q6eLbRE"
-        >
-          Arcjet
-        </a>
-      </div>
-
-      <a
-        href="https://launch.arcjet.com/Q6eLbRE"
-      >
-        <Image
-          className="mx-auto mt-2"
-          src="/assets/images/arcjet-light.svg"
-          alt="Arcjet"
-          width={128}
-          height={38}
-        />
-      </a>
     </>
   );
 };
